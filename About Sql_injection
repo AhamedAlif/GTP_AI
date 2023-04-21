@@ -1,0 +1,32 @@
+What is SQL injection?
+SQL Injection is a web-based attack used by hackers to steal sensitive information from organizations through web applications. It is one of the most common application layer attacks used today. This attack takes advantage of improper coding of web applications, which allows hackers to exploit the vulnerability by injecting SQL commands into the prior web application.
+
+The underlying fact that allows for SQL injection is that the fields available for user input in the web application allow SQL statements to pass through and interact with or query the database directly.
+
+For example, let’s consider a web application that implements a form-based login mechanism to store the user credentials and performs a simple SQL query to validate each login attempt.
+
+Here is a typical example:
+
+select * from users where username='admin' and password='admin123′;
+
+If the attacker knows the username of the application administrator is admin, he can log in as admin without supplying any password.
+
+admin'–
+
+The query in the back-end looks like:
+
+Select * from users where username='admin'–' and password='xxx';
+
+Note the comment sequence (–) causes the followed query to be ignored, so query executed is equivalent to:
+
+Select * from users where username='admin';
+
+
+So password check is bypassed.
+
+Different types of SQL injections
+There are three different kinds of SQL Injections possible on web applications. They are:
+
+In-band
+Out-band
+Inferior
