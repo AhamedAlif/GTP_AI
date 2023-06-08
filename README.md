@@ -1,4 +1,4 @@
-Project Title: Sentiment Analysis for Social Media
+Project Title: Sentiment Analysis for Social Media(Alva)
 
 Description:
 This project aims to perform sentiment analysis on social media data to determine the sentiment (positive, negative, or neutral) of user-generated text. The sentiment analysis model is trained using machine learning techniques and natural language processing algorithms. The project provides a comprehensive solution for analyzing and understanding public sentiment expressed on popular social media platforms.
